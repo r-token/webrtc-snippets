@@ -3,7 +3,7 @@ const openMicrophone = async (contraints) => {
 }
 
 try {
-    const stream = openMediaDevices({'video': false, 'audio': true})
+    const stream = openMicrophones({'video': false, 'audio': true})
     console.log('Got MediaStream:', stream)
 } catch (err) {
     console.error('Error accessing media devices.', err)
